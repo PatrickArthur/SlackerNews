@@ -66,8 +66,8 @@ background-color: #ff6600;
 height: 1px;
 }
 
-form {
-  text-align: center;
+.forms {
+  margin-left: 25;
 }
 
 footer {
@@ -100,4 +100,8 @@ footer {
 }
 
 
+/*.titld {
+    float: left;
+}
+*/
 

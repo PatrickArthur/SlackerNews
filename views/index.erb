@@ -20,12 +20,22 @@
 
   <div class="forms">
    <form action="/articles" method="post">
-      <label for="title_name">Title:</label>
-      <input type="text" id="title_name" name="title_name" />
-      <label for="url_name">URL:</label>
-      <input type="text" id="url_name" name="url_name" />
-      <label for="desc_name">Description:</label>
-      <input type="text" id="desc_name" name="desc_name"/>
+      <div class="titld">
+        <label for="title_name">Title:</label>
+        <input type="text" id="title_name" name="title_name" />
+      </div>
+
+      <div>
+        <label for="url_name">URL:</label>
+        <input type="text" id="url_name" name="url_name" />
+      </div>
+
+
+      <div>
+        <label for="desc_name">Description:</label>
+        <textarea name="desc_name"cols="30" rows="4"></textarea>
+      </div>
+
 
       <input type="submit" />
     </form>
@@ -35,6 +45,8 @@
 <% flash.each do |error|%>
   <%= flash.now[:error] %>
   <% end %>
+
+  <hr>
 
 
 
