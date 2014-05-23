@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'csv'
 require 'pry'
+require 'redis'
+require 'json'
 
 require 'sinatra/flash'
 
