@@ -1,0 +1,29 @@
+
+<td><a href="<%= "/articles/new" %>">Add a New Article</a></td>
+
+
+  <% @articles.each do |article| %>
+<ol>
+    <img src="https://news.ycombinator.com/grayarrow.gif" alt="some_text" width="10" height="10">
+   <tbody>
+    <tr>
+      <td><i><%= article['title_name']%></i></td>&nbsp;
+      <td><b><%= article['url_name'] %></b></td></br></br>
+      <td><%= article['desc_name'] %></td></br></br>
+      <b><a href="<%= "/articles/#{article['id']}" %>">Add Comment</a></b>
+  </tr>
+</tbody>
+  </ol>
+<% end %>
+
+
+
+
+
+
+
+
+  <p>More</p>
+
+
+

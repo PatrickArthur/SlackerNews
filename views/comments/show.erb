@@ -1,0 +1,39 @@
+<div class="forms">
+   <form action="#articles/#{article['id']}" method="post">
+      <div class="titld">
+        <label for="author_name">Author:</label>
+        <input type="text" id="author_name" name="author_name" />
+      </div>
+
+
+      <div>
+        <label for="comment">Comment:</label><br></b>
+        <textarea name="comment"cols="30" rows="4"></textarea>
+      </div>
+
+
+      <input type="submit" />
+    </form>
+</div>
+
+  <hr>
+
+
+
+
+<td><a href="<%= "/articles" %>">Back to Article</a></td>
+
+
+  <% @comments.each do |comment| %>
+<ol>
+    <img src="https://news.ycombinator.com/grayarrow.gif" alt="some_text" width="10" height="10">
+   <tbody>
+    <tr>
+      <td><b><%= comment['author_name'] %></b></td></br></br>
+      <td><%= comment['comment'] %></td></br>
+      <td><b> commented on <%= Date.today %></b></td>
+
+  </tr>
+</tbody>
+  </ol>
+<% end %>

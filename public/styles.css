@@ -66,8 +66,10 @@ background-color: #ff6600;
 height: 1px;
 }
 
-.forms {
-  margin-left: 25;
+.form {
+    width: 300px;
+    margin: 0 auto;
+    text-align : center;
 }
 
 footer {
